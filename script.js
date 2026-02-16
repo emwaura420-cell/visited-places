@@ -52,6 +52,11 @@ const places = [
 ];
 
 // Test: Log all place details
+const outputDiv = document.getElementById("output");
+
 places.forEach(place => {
-  console.log(place.getDetails());
+  const p = document.createElement("p");
+  p.textContent = place.getDetails();
+  outputDiv.appendChild(p);
 });
+ 
